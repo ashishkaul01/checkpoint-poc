@@ -40,6 +40,8 @@ def main():
     dt = DeltaTable("s3a://sdp-bucket/delta-table", storage_options=storage_options)
     cdf = _load_change_data_feed_from_delta_table(dt, starting_version=starting_ver)
     cdf_version = cdf["_commit_version"].max()
+    cdf_length = cdf.height
+    print("CDF Length: ", cdf_length)
 
     # Define the file name and content
     
