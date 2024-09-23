@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "checkpoint-poc"
+version = "0.1.0"
+description = ""
+authors = ["I542769 <ashish.kaul01@sap.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+pandas = "^2.2.3"
+deltalake = "^0.20.0"
+polars = "^1.7.1"
+boto3 = "^1.35.24"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
